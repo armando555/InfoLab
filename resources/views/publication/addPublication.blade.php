@@ -10,11 +10,8 @@
         <input type="text" name="titlePublication"class="form-control" id="formGroupExampleInput" placeholder="Título de la publicación"  value="{{old('titlePublication')}}">
         {!!$errors->first('titlePublication', '<small style="color:black;">:message</small>')!!}
       </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2"><h3>Autor</h3></label>
-        <input type="text" name="author" class="form-control" id="formGroupExampleInput2" placeholder="Autor"  value="{{old('author')}}">
+        <input type="hidden" name="author" class="form-control" id="formGroupExampleInput2" placeholder="Autor"  value="{{Auth::user()->name}}">
         {!!$errors->first('author', '<small style="color:black;">:message</small>')!!}
-      </div>
       <div class="form-group">
         <label for="formGroupExampleInput2"><h3>Descripción</h3></label>
         <input type="text" name="detailsPublication" class="form-control" id="formGroupExampleInput2" placeholder="Descripción de la publicación"  value="{{old('detailsPublication')}}">

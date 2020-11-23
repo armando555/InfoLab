@@ -32,7 +32,7 @@ class PublicationController extends Controller
     return view('/forum/forum',compact('publicationes'));
 
   }
-  public function index()
+  public function createPublication()
   {
     return view('/publication/addPublication');
   }
@@ -55,7 +55,7 @@ class PublicationController extends Controller
       'detailsPublication' => request('detailsPublication'),
       'imageUrl' => $url,
     ]);
-    return redirect()->route('forum.show');
+    return ;
 
   }
 
