@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Data;
 use Illuminate\Http\Request;
 
-class DataController extends Controller implements IDataModel
+class DataController extends Controller implements IDAODataModel
 {
     public function addData()
     {

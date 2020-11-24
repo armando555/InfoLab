@@ -4,7 +4,7 @@
 namespace App\Http\Controllers;
 
 
-interface IDataModel
+interface IDAODataModel
 {
     public function addData();
     public function getAllData();

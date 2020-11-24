@@ -84,6 +84,7 @@ class ReportController extends Controller
     public function saveModalNumData(){
         $dataController = new DataController();
         $dataController->addData();
+        return redirect()->route('report.show');
     }
 }
 
