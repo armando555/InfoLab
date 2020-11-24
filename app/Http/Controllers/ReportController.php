@@ -38,7 +38,8 @@ class ReportController extends Controller
 
     }
     public function edit(Report $report){
-        $numDatas = Data::get();
+        $dataController = new DataController();
+        $numDatas = $dataController->getAllData();
         $textData = TextData::get();
         $groupData = [];
         foreach($numDatas as $data){
@@ -81,23 +82,8 @@ class ReportController extends Controller
         return redirect()->route('report.show');
     }
     public function saveModalNumData(){
-        $datos = request('dataGroup');
-        $cont = 1;
-        $datos1= explode(',',$datos);
-        $numeral = request('numeralDataGroup');
-        echo "numeral: ".$numeral;
-        echo "<br>";
-        foreach ($datos1 as $dato){
-            $dato = $dato + 0.0;
-            echo "Dato ".$cont.": ".$dato."<br>";
-            $cont ++ ;
-            Data:: create([
-                'numData' => $dato,
-                'numeralData' => $numeral,
-                'reportId' => request('idReport'),
-            ]);
-        }
-        return redirect()->route('report.show');
+        $dataController = new DataController();
+        $dataController->addData();
     }
 }
 
