@@ -100,3 +100,4 @@ class ReportController extends Controller
         return redirect()->route('report.show');
     }
 }
+

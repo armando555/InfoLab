@@ -103,7 +103,7 @@
                     </div>
             </form>
             <!--ACA VAN LAS CONSULTAS INDIVIDUALES QUE DEBO BUSCAR MAÑANA-->
-            <form>
+            <form method="post" action="{{route('report.operation.select')}}" enctype="multipart/form-data">
                 @csrf
                 <label for="groupData">Escoja el grupo de datos</label>
                 <select name="groupData">
@@ -121,7 +121,7 @@
                 </select>
                 <input type="submit" class="btn btn-primary" value="Realizar cálculo">
             </form>
-
+            
             <div class="card">
                 <div class="card-body">
                     @forelse($textData as $text)
@@ -133,7 +133,7 @@
                     @empty
                         <div class="card">
                             <div class="card-body">
-                                <h1>No hay ningún conjunto de datos</h1>
+                                <h1>No hay ningún análisis</h1>
                             </div>
                         </div>
                     @endforelse
@@ -156,3 +156,4 @@
         </div>
     </div>
 @endsection
+

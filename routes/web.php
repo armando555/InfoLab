@@ -41,3 +41,5 @@ Route::post('report/addReport',[App\Http\Controllers\ReportController::class, 's
 
 Route::post('report/saveData',[App\Http\Controllers\ReportController::class, 'saveModalNumData'])->name('report.modal.add');
 Route::post('report/text',[App\Http\Controllers\ReportController::class, 'saveText'])->name('report.data.add');
+
+Route::post('report/mean',[App\Http\Controllers\OperationController::class, 'calculateOperation'])->name('report.operation.select');

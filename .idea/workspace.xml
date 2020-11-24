@@ -26,39 +26,240 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b584c7d-547d-45be-91aa-cfc6eb0fdc5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/InfoLab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_11_7_20__7_17_PM.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DataController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OperationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TextDataController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Operation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Report.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/TextData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_08_033642_create_reports_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_192123_create_text_data_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_193510_create_data_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_23_172908_create_operations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nano.save" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nano.save.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/report/addReport.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/report/editReport.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/report/reports.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/report/saveAnalitcData.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/report/saveData.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/publication/addPublication.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publication/addPublication.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/publication/editpublication.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publication/editpublication.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/IOperations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MeanController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/conf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/css/960.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/css/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/css/debug.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/css/phpchart-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/css/phpchart-screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/css/pricing-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/add_title.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/bar_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/basic_chart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/basic_chart2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/break_on_null.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/bubble_chart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/canvas_overlay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/catch_error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/chartln_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/dashed_lines.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/data_tracking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/donut_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/enable_animate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/filled_line.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/grid_padding.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/hidden_plot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/basicline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/basiclogaxis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/basiclogoptions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/basicoptions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/dualaxis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navdocs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navdocsover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navdownload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navdownloadover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navexamples.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navexamplesover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navhome.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navhome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/navhomeover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/sample3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/images/samplesm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/intticks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/jsondata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/marker_styles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/mekko_chart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/meter_gauge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/missing_values.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/multiple_lines.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/multiple_y_axes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/no_data_options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/php_source.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/pie_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/point_labels_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/point_labels_zoom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/examples/shadow_tests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/changes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/copyright.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-icons_2694e8_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-icons_3d80b3_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-icons_72a7cf_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/css/cupertino/jquery-ui-1.8.16.custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/gpl-2.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/classref.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/highlight.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/1c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/apache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/avrasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/axapta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/bash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/cmake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/cpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/delphi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/dos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/erlang-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/go.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/ini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/java.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/lisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/mel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/nginx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/objectivec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/parser3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/renderman.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/scala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/smalltalk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/tex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/vala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/vhdl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/languages/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/arta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/ascetic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/brown_paper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/brown_papersq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/far.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/github.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/idea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/ir_black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/magula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/school_book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/school_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/solarized_dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/solarized_light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/sunburst.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/vs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/highlighter/styles/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jqPlotCssStyling.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jqPlotOptions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery-migrate-1.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery-ui-1.8.16.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery.jqplot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery.jqplot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery.jqplot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery.jqplot.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/optionsTutorial.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.barrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.barrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.beziercurverenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.beziercurverenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.blockrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.blockrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.bubblerenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.bubblerenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvasaxislabelrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvasaxislabelrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvasaxistickrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvasaxistickrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvasoverlay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvasoverlay.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvastextrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.canvastextrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.categoryaxisrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.categoryaxisrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.ciparser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.ciparser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.cursor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.cursor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.dateaxisrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.dateaxisrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.donutrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.donutrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.dragable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.dragable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.enhancedlegendrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.enhancedlegendrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.funnelrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.funnelrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.highlighter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.highlighter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.json2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.json2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.logaxisrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.logaxisrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.mekkoaxisrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.mekkoaxisrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.mekkorenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.mekkorenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.metergaugerenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.metergaugerenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.ohlcrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.ohlcrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pierenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pierenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pointlabels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pointlabels.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pyramidaxisrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pyramidaxisrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pyramidgridrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pyramidgridrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pyramidrenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.pyramidrenderer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.trendline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/plugins/jqplot.trendline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/showjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/usage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/js/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/phpChart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_axes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_conf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_grid.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_legend.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_phpchartx.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_series.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_title.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libraries/phpChart_Lite/server/cls_util.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/calculus/calculus.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OperationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OperationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/editReport.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/editReport.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +461,9 @@
       <workItem from="1605638966673" duration="4532000" />
       <workItem from="1605664144513" duration="87000" />
       <workItem from="1606042053658" duration="16268000" />
-      <workItem from="1606142442358" duration="8857000" />
+      <workItem from="1606142442358" duration="18006000" />
+      <workItem from="1606167872209" duration="1837000" />
+      <workItem from="1606177400387" duration="2516000" />
     </task>
     <servers />
   </component>
@@ -303,14 +506,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1604794812032" />
-    <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605062970118">
+    <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606179466725">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1605062970118" />
+    <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606179466725" />
     <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1605119673316">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1605119673316" />
+    <state x="722" y="278" width="466" height="557" key="NewPhpClassDialog" timestamp="1606179293730">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="722" y="278" width="466" height="557" key="NewPhpClassDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606179293730" />
+    <state x="0" y="27" width="1465" height="1013" maximized="true" key="dock-window-1" timestamp="1606162934734">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="0" y="27" width="1465" height="1013" maximized="true" key="dock-window-1/0.27.1920.1053@0.27.1920.1053" timestamp="1606162934734" />
     <state x="624" y="252" key="run.anything.popup" timestamp="1606144763203">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
